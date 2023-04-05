@@ -5,17 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <img rel="shortcut icon" href="img/icon_fav.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Team Template</h1>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo-container">
+                <!--svg src="img/icon.svg" ></svg-->
+                <img src="img/logo-norway.png" width="188" alt="Norway logo">
+            </div>
+        </nav>    
+        <div class="header__menu">
+            <a href="#about" class="header__menu-item">About us</a>
+            <a href="#places" class="header__menu-item">Itinerary</a>
+            <a href="#testimonials" class="header__menu-item">Testimonials</a>
+            <a href="#blog" class="header__menu-item">Blog</a>
+            <a href="#contacts" class="header__menu-item">Contacts</a>
+            <a href="#contacts-form" class="header__menu-item button">Join us</a>
+            <!--в CSS робимо такий button Join us зі стрілочкою-->
+        </div>
+        <div>
+            <p><span class="color-divider">-</span>PERFECT TO JOURNEY</p> 
+            <h1 class="header__title">Norway</h1>
+            <div class="header__card card">
+                <img width="300" class="card__img" src="" alt="video">
+                <h3 class="card__title">Next trip to Norway</h3>
+            </div>
+        </div>
     </header>
     <main>
-        <img src="img/pudel.jpg" alt="Pudel with headset" srcset="">
+        <!--інший сайт-->
+        <div class="ads">
+            <div class="adds_food card">
+                <!--додавання фонової картинки - CSS -->
+                <p class="card__text">BUTCHERS, ROYAL CANIN, PEDIGREE</p>
+                <h3 class="card__titile">BUTCHERS, ROYAL CANIN, PEDIGREE</h3>
+                <a href="#pricing-food" class="card_link button">Buy Now</a>
+            </div>
+            <div class="ads_discount">
+                <!--додавання фонової картинки - CSS -->
+                <p class="card__text">BUTCHERS, ROYAL CANIN, PEDIGREE</p>
+                <h3 class="card__titile">BUTCHERS, ROYAL CANIN, PEDIGREE</h3>
+                <a href="#pricing-food" class="card_link button">Buy Now</a>
+            </div>
+        </div>
+        <section>
+            <!--карусель-->
+            <h2 class="bottled-beer__title">Bottled beer</h2>
+            <p class="bottled-beer_special">BOTTLED BEER</p>
+            <p class="bottled-beer_taste">Appreciate the taste..</p>
+            <div class="bottled-beer_caruosel caruosel">
+                <div class="caruosel__slide">
+                    <img width="90" src="img/bottle_lager.png" alt="" srcset="Beer lager">
+                    <h3>Lager Beer</h3>
+                    <p>This classic beer features a wheet aroma and mild</p>
+                </div>
+            </div>
+        </section>        
     </main>
-    <footer>
-
+    <footer id="contact-form" class="footer">
+        <h2 class="footer__title">Join Our Newsletter</h2>
+        <form action="" class="footer__form">
+            <input pattern=".*@.*" type="email" class="footer__input-email" placeholder="email">
+            <input type="submit" class="footer__submit">
+        </form>
     </footer>
 </body>
 </html>
