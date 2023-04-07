@@ -1,0 +1,24 @@
+/*завантажуємо шрифт*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* { 
+    /* * - застосовується до кожного елементу. Зпрацьовує багато раз */
+    /* додати у всі блоки в проектах */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+:root {
+    /* псевдоклас, відповідає селектору html і зпрацьовує 1 раз */
+    --sub-text-color: #14a9ee; /*змінна кольору*/
+    font-size: 18px;
+    scroll-behavior: smooth;
+    /*використовуємо шрифт*/
+    font-family: 'Playfair Display', serif;
+}

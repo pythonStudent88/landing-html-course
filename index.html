@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <img rel="shortcut icon" href="img/icon_fav.png" type="image/x-icon">
+    <style lang="en" type = "text/css" id="my-mode" ></style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!--next line helps to include text from header.partial.html to this file -->
+    <!--header data-include="header.partial.html"></header-->
     <header class="header">
         <nav class="header__nav">
             <div class="header__logo-container">
                 <!--svg src="img/icon.svg" ></svg-->
                 <img src="img/logo-norway.png" width="188" alt="Norway logo">
             </div>
-        </nav>    
+        </nav>
         <div class="header__menu">
             <a href="#about" class="header__menu-item">About us</a>
             <a href="#places" class="header__menu-item">Itinerary</a>
@@ -25,7 +29,7 @@
             <!--в CSS робимо такий button Join us зі стрілочкою-->
         </div>
         <div>
-            <p><span class="color-divider">-</span>PERFECT TO JOURNEY</p> 
+            <p><span class="color-divider">-</span>PERFECT TO JOURNEY</p>
             <h1 class="header__title">Norway</h1>
             <div class="header__card card">
                 <img width="300" class="card__img" src="" alt="video">
@@ -49,7 +53,7 @@
                 <a href="#pricing-food" class="card_link button">Buy Now</a>
             </div>
         </div>
-        <section>
+        <section class="beer-caruosel">
             <!--карусель-->
             <h2 class="bottled-beer__title">Bottled beer</h2>
             <p class="bottled-beer_special">BOTTLED BEER</p>
@@ -70,5 +74,6 @@
             <input type="submit" class="footer__submit">
         </form>
     </footer>
+    <script src="js/html-data-include.js"></script>
 </body>
 </html>
